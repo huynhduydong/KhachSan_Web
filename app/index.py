@@ -17,14 +17,28 @@ def about():
     return render_template('about.html')
 
 
+@app.route('/testimonial.html', methods=['GET'])
+def testimonial():
+    return render_template('testimonial.html')
+
+@app.route('/team.html', methods=['GET'])
+def team():
+    return render_template('team.html')
+
+
 @app.route('/contact.html', methods=['GET'])
 def contact():
     return render_template('contact.html')
 
 
-@app.route('/gallery.html', methods=['GET'])
-def gallery():
-    return render_template('gallery.html')
+@app.route('/service.html', methods=['GET'])
+def service():
+    return render_template('service.html')
+
+
+@app.route('/booking.html', methods=['GET'])
+def booking():
+    return render_template('booking.html')
 
 
 @app.route('/room.html', methods=['GET'])
